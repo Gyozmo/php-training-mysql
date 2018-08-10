@@ -39,5 +39,8 @@
 		</div>
 		<button type="submit" name="button">Envoyer</button>
 	</form>
+	<?php
+	
+	?>
 </body>
 </html>
