@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+
+<?php
+$dbh = new PDO('mysql:host=den1.mysql3.gear.host;dbname=randogyozmo', "randogyozmo", "Gh0Q~8_G6GYo");
+?>
+
 <head>
 	<meta charset="utf-8">
 	<title>Ajouter une randonnée</title>
@@ -40,7 +45,8 @@
 		<button type="submit" name="button">Envoyer</button>
 	</form>
 	<?php
-	
+	$add = $dbh->exec("INSERT INTO  (name, difficulty,distance,duration,height_difference)
+	VALUES ('Ma rando perso 1','moyen',10,'02:39:00',500)"); 
 	?>
 </body>
 </html>
